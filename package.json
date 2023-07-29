@@ -1,0 +1,16 @@
+{
+  "name": "video-shortcuts",
+  "version": "1.1.0",
+  "description": "Shortcuts for video",
+  "main": "src/script.js",
+  "author": "Armando",
+  "license": "MIT",
+  "scripts": {
+    "build": "web-ext build --artifacts-dir build --overwrite-dest --filename video-shortcuts.xpi"
+  },
+  "devDependencies": {
+    "@types/firefox-webext-browser": "^111.0.1",
+    "eslint": "^8.46.0",
+    "eslint-plugin-jsdoc": "^44.2.7"
+  }
+}

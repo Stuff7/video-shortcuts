@@ -1,0 +1,37 @@
+{
+  "manifest_version": 2,
+  "name": "Video Shortcuts",
+  "version": "1.1",
+  "description": "Shortcuts for video",
+  "web_accessible_resources": [
+    "src/style.css"
+  ],
+  "permissions": [
+    "<all_urls>",
+    "activeTab",
+    "storage"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["src/script.js"]
+    }
+  ],
+  "browser_action": {
+    "default_icon": {
+      "16": "src/icons/icon16.png",
+      "32": "src/icons/icon32.png"
+    },
+    "default_title": "Video Shortcuts",
+    "default_popup": "src/popup/index.html"
+  },
+  "icons": {
+    "48": "src/icons/icon48.png",
+    "128": "src/icons/icon128.png"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "video-shortcuts@stuff7.github.io"
+    }
+  }
+}
