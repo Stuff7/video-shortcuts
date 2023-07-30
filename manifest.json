@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Video Shortcuts",
-  "version": "1.1",
+  "version": "1.2",
   "description": "Shortcuts for video",
   "web_accessible_resources": [
     "src/style.css"
